@@ -64,7 +64,6 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  background-color: #000000;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/Hero-image.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,11 +106,188 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   background-color: #F46032;
+  color: white;
   border-radius: 0 8px 8px 0;
   height: 4rem;
   width: 17rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8% 6%;
+}
+.info .info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.info .info-text h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 5.8rem;
+  letter-spacing: 0.02em;
+}
+.info .info-text p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5rem;
+  line-height: 127%;
+  padding-top: 3%;
+  color: #212429;
+}
+.info img {
+  border-radius: 10px;
+  justify-self: center;
+}
+.how-it-works {
+  background: url(/assets/dark-accent-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.how-it-works .title {
+  text-align: center;
+  color: #F8F9FA;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4.8rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  padding-bottom: 2%;
+}
+.how-it-works .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-it-works .info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: #D8E7ED;
+  border-radius: 6px;
+  margin: 0 1%;
+  padding: 2%;
+  width: 25%;
+}
+.how-it-works .info-container .photo-container {
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 65px;
+  margin-bottom: 3rem;
+}
+.how-it-works .info-container h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5rem;
+  line-height: 130%;
+  text-align: left;
+}
+.how-it-works .info-container p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.6rem;
+  padding: 5% 0 20% 0;
+  line-height: 148%;
+  color: #212429;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.quote .quote-container {
+  background-color: #F1F3F6;
+  box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #FFFFFF, inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 80%;
+}
+.quote .quote-container #quotes {
+  position: absolute;
+  padding: 2% 0 0 2%;
+}
+.quote .quote-container .quote-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9% 0;
+}
+.quote .quote-container .quote-content .person-quote {
+  flex-flow: column nowrap;
+  padding-left: 5%;
+}
+.quote .quote-container .quote-content h2 {
+  font-size: 3.13rem;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 127%;
+}
+.quote .quote-container .quote-content p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 141%;
+}
+.shop-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: linear-gradient(rgba(110, 110, 110, 0.349), rgba(110, 110, 110, 0.349)), url(/assets/web.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+.shop-now .content {
+  width: 45%;
+}
+.shop-now .content h2 {
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #F8F9FA;
+}
+.shop-now .content p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 141%;
+  color: #F8F9FA;
+}
+.shop-now .last-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+.shop-now .last-search input {
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #D8E7ED;
+  margin-left: 3%;
+  height: 4rem;
+  width: 19rem;
+}
+.shop-now .last-search h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F46032;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  height: 4rem;
+  width: 17rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: 'Fira Sans', sans-serif;
 }
 footer {
   display: grid;

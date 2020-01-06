@@ -7,14 +7,12 @@
     .landing {
         .flex(center, center);
         flex-flow: column nowrap;
-        background-color: rgb(0, 0, 0);
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/Hero-image.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: 100%;
         height: 60vh;
-        // need to fix opacity *****************
 
         h1,
         h3 {
@@ -39,25 +37,180 @@
         .landing-search {
             .flex(center, center);
             padding-top: 3%;
-
-            input {
-                border-radius: 4px 0px 0px 4px;
-                border: 1px solid #D8E7ED;
-                margin-left: 3%;
-                height: 4rem;
-                width: 19rem;
-            }
-
-            h3 {
-                .flex(center, center);
-                background-color: #F46032;
-                border-radius: 0 8px 8px 0;
-                height: 4rem;
-                width: 17rem;
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-            }
+            .search();
         }
     }
 
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8% 6%;
+
+    .info-text {
+        .flex(center, center);
+        flex-flow: column nowrap;
+
+        h2 {
+            font-family: @company-font;
+            font-size: 4.8rem;
+            font-weight: bold;
+            line-height: 5.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        p {
+            font-family: @company-font;
+            font-size: 2.5rem;
+            line-height: 127%;
+            padding-top: 3%;
+            color: #212429;
+
+        }
+    }
+
+    img {
+        border-radius: 10px;
+        justify-self: center;
+    }
+}
+
+.how-it-works {
+    background: url(/assets/dark-accent-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 3%;
+
+    .title {
+        text-align: center;
+        color: #F8F9FA;
+        font-family: @company-font;
+        font-size: 4.8rem;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        padding-bottom: 2%
+    }
+
+    .main-container {
+        .flex(center, center);
+    }
+
+    .info-container {
+        .flex(center, center);
+        flex-flow: column nowrap;
+        background-color: #D8E7ED;
+        border-radius: 6px;
+        margin: 0 1%;
+        padding: 2%;
+        width: 25%;
+
+        .photo-container {
+            background-color: white;
+            border-radius: 50px;
+            border: 2px solid black;
+            padding: 2rem;
+            border-radius: 65px;
+            margin-bottom: 3rem;
+
+        }
+
+        h2 {
+            font-family: @company-font;
+            font-size: 2.5rem;
+            line-height: 130%;
+            text-align: left;
+        }
+
+        p {
+            font-family: @company-font;
+            font-size: 1.6rem;
+            padding: 5% 0 20% 0;
+            line-height: 148%;
+            color: #212429;
+        }
+    }
+}
+
+.quote {
+    .flex(center, center);
+    margin-bottom: 3%;
+
+    .quote-container {
+        background-color: #F1F3F6;
+        box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #FFFFFF, inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        width: 80%;
+
+        #quotes {
+            position: absolute;
+            padding: 2% 0 0 2%;
+        }
+
+        .quote-content {
+            .flex(center, center);
+            padding: 9% 0;
+
+            .person-quote {
+                flex-flow: column nowrap;
+                padding-left: 5%;
+            }
+
+            h2 {
+                font-size: 3.13rem;
+                font-family: @company-font;
+                line-height: 127%;
+            }
+
+            p {
+                font-family: @company-font;
+                font-size: 2rem;
+                line-height: 141%;
+            }
+        }
+
+    }
+}
+
+.shop-now {
+    .flex(center, center);
+    flex-flow: column nowrap;
+    background: linear-gradient(rgba(110, 110, 110, 0.349), rgba(110, 110, 110, 0.349)), url(/assets/web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+
+    .content {
+
+        width: 45%;
+
+        h2 {
+            font-size: 4.8rem;
+            line-height: 5.8rem;
+            font-family: @company-font;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+            color: #F8F9FA;
+        }
+
+        p {
+
+            font-family: @company-font;
+            font-size: 2rem;
+            line-height: 141%;
+            color: #F8F9FA;
+        }
+    }
+
+    .last-search {
+        .flex(center, center);
+        padding: 3%;
+
+        .search();
+    }
 }
