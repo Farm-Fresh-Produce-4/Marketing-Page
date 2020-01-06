@@ -53,3 +53,62 @@ nav ul li a {
   font-size: 1.5rem;
   padding: 10% 0;
 }
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4% 8%;
+}
+footer .column > h3 {
+  font-size: 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  line-height: 141%;
+  padding-bottom: 5%;
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 220%;
+  color: rgba(43, 41, 45, 0.6);
+}
+.social {
+  display: flex;
+  border-top: 1px solid rgba(43, 41, 45, 0.123);
+  padding: 2% 0;
+}
+.social .bottom-left {
+  margin: 0 6%;
+}
+.social .bottom-left ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social .bottom-left li {
+  list-style: none;
+  padding: 0 10%;
+}
+.social .bottom-left li a {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 22px;
+}
+.social .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 50%;
+}
+.social .social-icons a {
+  text-decoration: none;
+  padding: 0 10%;
+  font-size: 2rem;
+  color: rgba(43, 41, 45, 0.6);
+}
