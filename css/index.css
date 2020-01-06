@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+Html {
+  Font-size: 62.5%;
+}
+Section {
+  Padding: 4% 0;
+}
+nav {
+  background-color: #1F2A4C;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2% 0;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #D8E7ED;
+  font-size: 2rem;
+  line-height: 141%;
+  font-family: 'Fira Sans', sans-serif;
+}
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search #search-box {
+  border-radius: 4px;
+  border: 1px solid #D8E7ED;
+  margin-left: 3%;
+  height: 2.5rem;
+  width: 17rem;
+}
+#cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#click-to-sell {
+  background-color: #7FAECC;
+  color: #1F2A4C;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 10% 0;
+}
