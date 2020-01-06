@@ -5,8 +5,22 @@ nav {
         .flex(space-around, center);
         padding: 1.2% 0;
 
+        @media (max-width: 900px) {
+            padding: 3% 1%;
+        }
+
         li {
             list-style: none;
+
+            @media(max-width: 900px) {
+
+                .hide,
+                #search,
+                #cart {
+                    display: none;
+                }
+            }
+
 
             a {
                 text-decoration: none;
@@ -44,4 +58,25 @@ nav {
     font-size: 1.5rem;
     padding: 10% 0;
 
+}
+
+.mobile-nav {
+    display: none;
+
+    @media (max-width: 900px) {
+        display: flex;
+
+        padding: 2% 0;
+        margin: auto;
+
+        .hamburger-menu {
+            font-size: 2rem;
+            margin-left: 4%;
+        }
+
+        .shopping-cart {
+            margin-left: 80%;
+        }
+
+    }
 }

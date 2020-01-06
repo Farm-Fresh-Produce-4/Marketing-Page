@@ -19,8 +19,20 @@ nav ul {
   align-items: center;
   padding: 1.2% 0;
 }
+@media (max-width: 900px) {
+  nav ul {
+    padding: 3% 1%;
+  }
+}
 nav ul li {
   list-style: none;
+}
+@media (max-width: 900px) {
+  nav ul li .hide,
+  nav ul li #search,
+  nav ul li #cart {
+    display: none;
+  }
 }
 nav ul li a {
   text-decoration: none;
@@ -53,6 +65,23 @@ nav ul li a {
   font-size: 1.5rem;
   padding: 10% 0;
 }
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 900px) {
+  .mobile-nav {
+    display: flex;
+    padding: 2% 0;
+    margin: auto;
+  }
+  .mobile-nav .hamburger-menu {
+    font-size: 2rem;
+    margin-left: 4%;
+  }
+  .mobile-nav .shopping-cart {
+    margin-left: 80%;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -83,10 +112,23 @@ nav ul li a {
   line-height: 58px;
   letter-spacing: 0.02rem;
 }
+@media (max-width: 800px) {
+  .header .landing h1 {
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+}
 .header .landing h3 {
   font-size: 2.5rem;
   font-family: 'Fira Sans', sans-serif;
   line-height: 130%;
+}
+@media (max-width: 800px) {
+  .header .landing h3 {
+    font-size: 1.6rem;
+    line-height: 148%;
+    padding: 3% 0;
+  }
 }
 .header .landing .landing-search {
   display: flex;
@@ -119,6 +161,11 @@ nav ul li a {
   grid-template-columns: repeat(2, 1fr);
   padding: 8% 6%;
 }
+@media (max-width: 800px) {
+  .info {
+    display: block;
+  }
+}
 .info .info-text {
   display: flex;
   justify-content: center;
@@ -132,6 +179,12 @@ nav ul li a {
   line-height: 5.8rem;
   letter-spacing: 0.02em;
 }
+@media (max-width: 800px) {
+  .info .info-text h2 {
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+}
 .info .info-text p {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2.5rem;
@@ -139,12 +192,18 @@ nav ul li a {
   padding-top: 3%;
   color: #212429;
 }
+@media (max-width: 800px) {
+  .info .info-text p {
+    font-size: 2rem;
+    line-height: 141%;
+  }
+}
 .info img {
   border-radius: 10px;
   justify-self: center;
 }
 .how-it-works {
-  background: url(/assets/dark-accent-background.png);
+  background-image: url(/assets/dark-accent-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,10 +220,25 @@ nav ul li a {
   letter-spacing: 0.02em;
   padding-bottom: 2%;
 }
+@media (max-width: 800px) {
+  .how-it-works .title {
+    font-size: 2.5rem;
+    line-height: 130%;
+    padding: 5% 0;
+  }
+}
 .how-it-works .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .how-it-works .main-container {
+    flex-flow: column;
+    background: #1F2A4C;
+    background-size: cover;
+    background-image: none;
+  }
 }
 .how-it-works .info-container {
   display: flex;
@@ -176,6 +250,12 @@ nav ul li a {
   margin: 0 1%;
   padding: 2%;
   width: 25%;
+}
+@media (max-width: 800px) {
+  .how-it-works .info-container {
+    width: 90%;
+    margin: 4% 0;
+  }
 }
 .how-it-works .info-container .photo-container {
   background-color: white;
@@ -210,9 +290,19 @@ nav ul li a {
   border-radius: 20px;
   width: 80%;
 }
+@media (max-width: 800px) {
+  .quote .quote-container {
+    width: 90%;
+  }
+}
 .quote .quote-container #quotes {
   position: absolute;
   padding: 2% 0 0 2%;
+}
+@media (max-width: 800px) {
+  .quote .quote-container #quotes {
+    height: 5%;
+  }
 }
 .quote .quote-container .quote-content {
   display: flex;
@@ -229,10 +319,22 @@ nav ul li a {
   font-family: 'Fira Sans', sans-serif;
   line-height: 127%;
 }
+@media (max-width: 800px) {
+  .quote .quote-container .quote-content h2 {
+    font-size: 2rem;
+    line-height: 141%;
+  }
+}
 .quote .quote-container .quote-content p {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2rem;
   line-height: 141%;
+}
+@media (max-width: 800px) {
+  .quote .quote-container .quote-content p {
+    font-size: 1.6rem;
+    line-height: 148%;
+  }
 }
 .shop-now {
   display: flex;
@@ -247,7 +349,16 @@ nav ul li a {
   height: 60vh;
 }
 .shop-now .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45%;
+}
+@media (max-width: 800px) {
+  .shop-now .content {
+    flex-flow: column;
+    width: 80%;
+  }
 }
 .shop-now .content h2 {
   font-size: 4.8rem;
@@ -257,11 +368,26 @@ nav ul li a {
   letter-spacing: 0.02em;
   color: #F8F9FA;
 }
+@media (max-width: 800px) {
+  .shop-now .content h2 {
+    font-size: 2.5rem;
+    line-height: 130%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .shop-now .content p {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2rem;
   line-height: 141%;
   color: #F8F9FA;
+}
+@media (max-width: 800px) {
+  .shop-now .content p {
+    font-size: 1.6rem;
+    line-height: 148%;
+    padding: 5% 0;
+  }
 }
 .shop-now .last-search {
   display: flex;
@@ -293,6 +419,16 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 4% 8%;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .column {
+    justify-self: center;
+    padding: 0 10%;
+  }
 }
 footer .column > h3 {
   font-size: 2rem;
@@ -300,6 +436,12 @@ footer .column > h3 {
   font-weight: bold;
   line-height: 141%;
   padding-bottom: 5%;
+}
+@media (max-width: 800px) {
+  footer .column > h3 {
+    font-size: 1.6rem;
+    line-height: 141%;
+  }
 }
 footer li {
   list-style: none;
@@ -311,6 +453,12 @@ footer li a {
   font-family: 'Fira Sans', sans-serif;
   line-height: 220%;
   color: rgba(43, 41, 45, 0.6);
+}
+@media (max-width: 800px) {
+  footer li a {
+    font-size: 1.2rem;
+    line-height: 220%;
+  }
 }
 .social {
   display: flex;
@@ -329,6 +477,11 @@ footer li a {
   list-style: none;
   padding: 0 10%;
 }
+@media (max-width: 800px) {
+  .social .bottom-left li {
+    padding: 0 5%;
+  }
+}
 .social .bottom-left li a {
   text-decoration: none;
   color: rgba(43, 41, 45, 0.6);
@@ -336,15 +489,32 @@ footer li a {
   font-size: 1.4rem;
   line-height: 22px;
 }
+@media (max-width: 800px) {
+  .social .bottom-left li a {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
 .social .social-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 0 50%;
 }
+@media (max-width: 800px) {
+  .social .social-icons {
+    margin: 0 20%;
+  }
+}
 .social .social-icons a {
   text-decoration: none;
-  padding: 0 10%;
+  margin: 0 10%;
   font-size: 2rem;
   color: rgba(43, 41, 45, 0.6);
+}
+@media (max-width: 800px) {
+  .social .social-icons a {
+    margin: 0 7%;
+    font-size: 1.4rem;
+  }
 }
