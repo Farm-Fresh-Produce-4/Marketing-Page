@@ -118,6 +118,10 @@ nav {
     padding: 1%;
     margin-bottom: 3%;
 
+    @media(@phone) {
+        padding: 0;
+    }
+
     .title {
         text-align: center;
         color: #F8F9FA;
@@ -202,11 +206,16 @@ nav {
 
         @media(max-width: 800px) {
             width: 90%;
+            margin: 5% 0;
         }
 
         #quotes {
             position: absolute;
             padding: 2% 0 0 2%;
+
+            @media(min-width: 801px) {
+                height: 8%;
+            }
 
             @media(max-width: 800px) {
                 height: 5%;
@@ -216,6 +225,14 @@ nav {
         .quote-content {
             .flex(center, center);
             padding: 9% 0;
+
+            @media(@phone) {
+                padding: 15% 3%;
+            }
+
+            @media(min-width: 801px) {
+                padding: 10% 5%;
+            }
 
             .person-quote {
                 flex-flow: column nowrap;

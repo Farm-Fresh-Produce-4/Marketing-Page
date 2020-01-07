@@ -47,7 +47,8 @@ footer {
 }
 
 .social {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-top: 1px solid rgba(43, 41, 45, 0.123);
     padding: 2% 0;
 
@@ -60,11 +61,7 @@ footer {
 
         li {
             list-style: none;
-            padding: 0 10%;
-
-            @media (max-width: 800px) {
-                padding: 0 5%;
-            }
+            padding: 0 5%;
 
             a {
                 text-decoration: none;
@@ -83,20 +80,15 @@ footer {
 
     .social-icons {
         .flex(flex-end, center);
-        margin: 0 50%;
-
-        @media(max-width: 800px) {
-            margin: 0 20%;
-        }
+        margin: 0 20%;
 
         a {
             text-decoration: none;
-            margin: 0 10%;
+            margin: 0 5%;
             font-size: 2rem;
             color: rgba(43, 41, 45, 0.6);
 
             @media(max-width: 800px) {
-                margin: 0 7%;
                 font-size: 1.4rem;
             }
 
