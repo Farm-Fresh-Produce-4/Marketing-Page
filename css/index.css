@@ -82,6 +82,9 @@ nav ul li a {
     margin-left: 80%;
   }
 }
+nav ul {
+  margin: 0;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -159,6 +162,7 @@ nav ul li a {
 .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5%;
   padding: 8% 6%;
 }
 @media (max-width: 800px) {
@@ -250,11 +254,13 @@ nav ul li a {
   margin: 0 1%;
   padding: 2%;
   width: 25%;
+  height: 45rem;
 }
 @media (max-width: 800px) {
   .how-it-works .info-container {
     width: 90%;
     margin: 4% 0;
+    height: auto;
   }
 }
 .how-it-works .info-container .photo-container {
@@ -352,6 +358,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
   width: 45%;
 }
 @media (max-width: 800px) {
@@ -367,6 +374,7 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 0.02em;
   color: #F8F9FA;
+  padding-bottom: 2%;
 }
 @media (max-width: 800px) {
   .shop-now .content h2 {
@@ -414,6 +422,55 @@ nav ul li a {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-family: 'Fira Sans', sans-serif;
+}
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2A4C;
+  background-size: cover;
+  height: 30vh;
+}
+.contact-header h1 {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4.8rem;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 10% 0;
+  background-color: #1F2A4C;
+  width: 65%;
+  margin: 15% auto;
+  border-radius: 10px;
+}
+.contact-form .contact-heading {
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+.contact-form .form-control {
+  width: ;
+}
+.contact-form .send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: lightgray;
+  width: 30%;
+  margin: 5% auto;
+  border-radius: 10px;
+  padding: 3%;
+  font-size: 2rem;
+}
+.contact-form .send-button:hover {
+  filter: invert(15%);
+  text-decoration: none;
 }
 footer {
   display: grid;

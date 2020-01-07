@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <!--  -->
     <script src="https://kit.fontawesome.com/2c97d4a124.js" crossorigin="anonymous"></script>
-    <title>FarmerPal</title>
+    <title>Contact Page</title>
 </head>
 
 <body>
@@ -29,6 +32,8 @@
             <li><a href="#clicktosell" id="click-to-sell">Click Here To Sell</a></li>
         </ul>
     </nav>
+
+    <!-- MOBILE NAV -->
     <div class="mobile-nav">
         <div class="hamburger-menu">
             <i class="fas fa-bars" aria-hidden="true"></i>
@@ -38,97 +43,34 @@
         </div>
     </div>
 
+
     <!-- HEADER -->
-    <section class="header">
-        <div class="landing">
-            <h1>Fresh Produce From Your Local Farmers</h1>
-            <h3>Skip the supermarket, buy fresh from the farmers in your area and get your produce straight out of
-                the
-                fields.</h3>
-            <div class="landing-search">
-                <input type="text">
-                <h3>Shop Now</h3>
-            </div>
-        </div>
+    <section class="contact-header">
+        <h1>Have Questions?</h1>
     </section>
 
-    <!-- INFO -->
-    <section class="info">
-        <div class="info-text">
-            <h2>Buying organic and living healthy made simpler</h2>
-            <p>Farmer’s grow more than they can sell. FarmerPal wants to solve food waste by connecting farmers with
-                consumers who wants just picked fresh produce </p>
-        </div>
-        <img src="/assets/farmer.png" alt="">
-    </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works">
-        <h2 class="title">How It Works</h2>
-        <div class="main-container">
-            <div class="info-container">
-                <div class="photo-container">
-                    <img src="/assets/step-1.png" alt="">
-                </div>
-                <h2>Choose a farmer close to your location</h2>
-                <p>Enter your zipcode to find all the farmers in your location</p>
+    <!-- CONTACT FORM -->
+    <form class="contact-form">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="email" class="contact-heading">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="">
             </div>
-
-            <div class="info-container">
-                <div class="photo-container">
-                    <img src="/assets/step-2.png" alt="">
-                </div>
-                <h2>Add the fresh produce our farmers offer </h2>
-                <p>Choose from the many crops grown in your local area</p>
+            <div class="form-group">
+                <label for="firstName" class="contact-heading">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="">
             </div>
-
-            <div class="info-container">
-                <div class="photo-container">
-                    <img src="/assets/step-3.png" alt="">
-                </div>
-                <h2>Purchase and pick up your order</h2>
-                <p>You will be notified when your order is ready for pick up</p>
+            <div class="form-group">
+                <label for="message" class="contact-heading">What Can We Help You With?</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
-
-            <div class="info-container">
-                <div class="photo-container">
-                    <img src="/assets/step-1.png" alt="">
-                </div>
-                <h2>We have subscription food boxes as well</h2>
-                <p>Our farmers also offer monthly or weekly food boxes. You pick the items</p>
+            <div>
+                <a href="#send-button" class="send-button">Send</a>
             </div>
         </div>
-    </section>
+    </form>
 
-    <!-- QUOTE -->
-    <section class="quote">
-        <div class="quote-container">
-            <img src="/assets/quote.png" alt="" id="quotes">
-            <div class="quote-content">
-                <div class="person">
-                    <img src="/assets/person.png" alt="">
-                </div>
-                <div class="person-quote">
-                    <h2>Sarah Johnson</h2>
-                    <p>“I love my farmer pal Jose. He always adds a <br> basket of my favorite fruit with my order”</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SHOP NOW -->
-    <section class="shop-now">
-        <div class="content">
-            <h2>Be Part of The Food Revolution</h2>
-            <p>Our mission is Buying food from our local growers and communities encourages a healthy, seasonal diet, a
-                wider variety of food on your table, and supports local economies.
-            </p>
-        </div>
-        <div class="last-search">
-            <input type="text">
-            <h3>Shop Now</h3>
-        </div>
-    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -163,6 +105,8 @@
         </div>
     </footer>
 
+
+    <!-- SOCIAL ICONS -->
     <section class="social">
         <div class="bottom-left">
             <ul>
@@ -181,9 +125,16 @@
 
 
 
-
-
-
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
 </body>
 
