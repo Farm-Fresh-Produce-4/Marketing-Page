@@ -427,33 +427,39 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1F2A4C;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/contact-header.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 30vh;
 }
 .contact-header h1 {
   color: white;
   font-family: 'Fira Sans', sans-serif;
   font-size: 4.8rem;
+  text-align: center;
 }
 .contact-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 10% 0;
-  background-color: #1F2A4C;
-  width: 65%;
-  margin: 15% auto;
+  padding: 5% 0;
+  background-color: #F1F3F6;
+  box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #FFFFFF, inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+  width: 45%;
+  margin: 5% auto;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .contact-form {
+    width: 95%;
+  }
 }
 .contact-form .contact-heading {
   font-size: 2.5rem;
-  color: white;
+  color: #1F2A4C;
   font-family: 'Fira Sans', sans-serif;
-}
-.contact-form .form-control {
-  width: ;
 }
 .contact-form .send-button {
   display: flex;
@@ -461,7 +467,7 @@ nav ul {
   align-items: center;
   color: white;
   font-family: 'Fira Sans', sans-serif;
-  background-color: lightgray;
+  background-color: #1F2A4C;
   width: 30%;
   margin: 5% auto;
   border-radius: 10px;
