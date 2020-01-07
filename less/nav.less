@@ -1,0 +1,106 @@
+nav {
+    background-color: @company-blue;
+
+    ul {
+        .flex(space-around, center);
+        padding: 1.2% 0;
+
+        @media (max-width: 900px) {
+            padding: 3% 1%;
+        }
+
+        li {
+            list-style: none;
+
+            @media(max-width: 900px) {
+
+                .hide,
+                #search,
+                #cart {
+                    display: none;
+                }
+
+            }
+
+            &:hover {
+                filter: opacity(75%);
+            }
+
+
+            a {
+                text-decoration: none;
+                color: #D8E7ED;
+                font-size: 2rem;
+                line-height: 141%;
+                font-family: @company-font;
+            }
+
+        }
+    }
+}
+
+#farmerpal {
+    .flex(center, center);
+    flex-flow: column;
+}
+
+#search {
+    .flex(center, center);
+
+    #search-box {
+        border-radius: 4px;
+        border: 1px solid #D8E7ED;
+        margin-left: 3%;
+        height: 2.5rem;
+        width: 17rem;
+    }
+}
+
+#cart {
+    .flex(center, center);
+}
+
+#click-to-sell {
+    background-color: #7FAECC;
+    color: @company-blue;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: .5% 1%;
+
+    @media(@phone) {
+        padding: 2%;
+    }
+
+    &:hover {
+        filter: invert(10%);
+    }
+
+    li {
+
+        a {
+            white-space: nowrap;
+        }
+    }
+
+}
+
+.mobile-nav {
+    display: none;
+
+    @media (max-width: 900px) {
+        display: flex;
+        padding: 2% 0;
+        margin: auto;
+        align-items: center;
+
+        .hamburger-menu {
+            font-size: 2rem;
+            margin-left: 4%;
+        }
+
+        .shopping-cart {
+            margin-left: 80%;
+        }
+
+    }
+}

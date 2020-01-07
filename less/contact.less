@@ -1,0 +1,55 @@
+.contact-header {
+    .flex(center, center);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+
+    h1 {
+        color: white;
+        font-family: @company-font;
+        font-size: 4.8rem;
+        text-align: center;
+    }
+}
+
+
+.contact-form {
+    .flex(center, center);
+    flex-flow: column;
+    padding: 5% 0;
+    background-color: #F1F3F6;
+    box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #FFFFFF, inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    width: 45%;
+    margin: 5% auto;
+    border-radius: 10px;
+
+    @media(@phone) {
+        width: 95%;
+    }
+
+    .contact-heading {
+        font-size: 2.5rem;
+        color: @company-blue;
+        font-family: @company-font;
+    }
+
+    .send-button {
+        .flex(center, center);
+        color: white;
+        font-family: @company-font;
+        background-color: @company-blue;
+        width: 30%;
+        margin: 5% auto;
+        border-radius: 10px;
+        padding: 3%;
+        font-size: 2rem;
+
+        &:hover {
+            filter: invert(15%);
+            text-decoration: none;
+
+        }
+    }
+}
