@@ -1,3 +1,5 @@
+// MOBILE MENU FUNCTIONALITY
+
 const mobileMenu = document.getElementById('hamburger-menu');
 mobileMenu.onclick = function () {
     const menuItems = document.getElementById('mobile-menu-items');
