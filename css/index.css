@@ -106,6 +106,18 @@ nav ul li a:hover {
   .mobile-nav .shopping-cart {
     margin-left: 85%;
   }
+  .mobile-nav .mobile-menu-items {
+    padding-top: 15%;
+  }
+  .mobile-nav .mobile-menu-items li {
+    list-style: none;
+    padding: 5% 0;
+  }
+  .mobile-nav .mobile-menu-items li a {
+    color: #D8E7ED;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+  }
 }
 nav ul {
   margin: 0;

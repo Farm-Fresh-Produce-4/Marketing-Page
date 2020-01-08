@@ -32,7 +32,7 @@
             <li><a href="#search" id="search" class="hide">Search<input type="text" id="search-box"> </a> </li>
             <li><a href="#cart" id="cart" class="hide"> <img src="/assets/shopping-cart.png" alt=""></a>
             </li>
-            <li><a href="#sign-in" class="hide">Sign In</a></li>
+            <li><a href="https://farm-fresh-produce-bw.netlify.com/" class="hide">Sign In</a></li>
             <div id="click-to-sell">
                 <li> <a href="#clicktosell">Click Here To Sell</a></li>
             </div>
@@ -41,11 +41,17 @@
     </nav>
 
     <!-- MOBILE NAV -->
-    <div class="mobile-nav">
-        <div class="hamburger-menu">
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="hamburger-menu" id="hamburger-menu">
             <i class="fas fa-bars" aria-hidden="true"></i>
+            <div id="mobile-menu-items" class="mobile-menu-items" style="display: none;">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#farms">Farms</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </div>
         </div>
-        <div class="shopping-cart">
+        <div class="shopping-cart" id="shopping-cart">
             <a href="#cart" class="mobile-cart"> <img src="/assets/mobile-cart.png" alt=""></a>
         </div>
     </div>
@@ -192,6 +198,8 @@
     </section>
 
 
+
+    <script src="/index.js"></script>
 
 
 
