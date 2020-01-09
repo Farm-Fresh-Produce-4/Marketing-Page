@@ -358,7 +358,7 @@ nav ul {
 }
 @media (min-width: 801px) {
   .quote .quote-container #quotes {
-    height: 8%;
+    height: 7%;
   }
 }
 @media (max-width: 800px) {
@@ -559,6 +559,11 @@ footer {
   footer .column {
     justify-self: center;
     padding: 0 10%;
+  }
+}
+@media (min-width: 801px) {
+  footer {
+    grid-gap: 8%;
   }
 }
 footer .column > h3 {
