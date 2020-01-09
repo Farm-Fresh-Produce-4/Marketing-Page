@@ -37,14 +37,16 @@ nav ul li {
 nav ul li:hover {
   filter: opacity(75%);
 }
-nav ul li a {
+nav ul li a,
+nav ul li p {
   text-decoration: none;
   color: #D8E7ED;
   font-size: 2rem;
   line-height: 141%;
   font-family: 'Fira Sans', sans-serif;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li p:hover {
   text-decoration: none;
   filter: opacity(75%);
 }
