@@ -18,6 +18,7 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   padding: 1.2% 0;
+  margin: 0;
 }
 @media (max-width: 900px) {
   nav ul {
@@ -37,15 +38,18 @@ nav ul li {
 nav ul li:hover {
   filter: opacity(75%);
 }
-nav ul li a {
+nav ul li a,
+nav ul li p {
   text-decoration: none;
   color: #D8E7ED;
   font-size: 2rem;
   line-height: 141%;
   font-family: 'Fira Sans', sans-serif;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li p:hover {
   text-decoration: none;
+  color: #D8E7ED;
   filter: opacity(75%);
 }
 #farmerpal {
@@ -58,6 +62,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 #search #search-box {
   border-radius: 4px;
@@ -118,9 +123,6 @@ nav ul li a:hover {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
   }
-}
-nav ul {
-  margin: 0;
 }
 .header {
   display: flex;
@@ -354,7 +356,7 @@ nav ul {
 }
 @media (min-width: 801px) {
   .quote .quote-container #quotes {
-    height: 8%;
+    height: 7%;
   }
 }
 @media (max-width: 800px) {
@@ -555,6 +557,11 @@ footer {
   footer .column {
     justify-self: center;
     padding: 0 10%;
+  }
+}
+@media (min-width: 801px) {
+  footer {
+    grid-gap: 8%;
   }
 }
 footer .column > h3 {

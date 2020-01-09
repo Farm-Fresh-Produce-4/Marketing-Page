@@ -4,6 +4,7 @@ nav {
     ul {
         .flex(space-around, center);
         padding: 1.2% 0;
+        margin: 0;
 
         @media (max-width: 900px) {
             padding: 3% 1%;
@@ -27,7 +28,8 @@ nav {
             }
 
 
-            a {
+            a,
+            p {
                 text-decoration: none;
                 color: #D8E7ED;
                 font-size: 2rem;
@@ -36,6 +38,7 @@ nav {
 
                 &:hover {
                     text-decoration: none;
+                    color: #D8E7ED;
                     filter: opacity(75%);
                 }
             }
@@ -51,6 +54,7 @@ nav {
 
 #search {
     .flex(center, center);
+    margin: 0;
 
     #search-box {
         border-radius: 4px;
